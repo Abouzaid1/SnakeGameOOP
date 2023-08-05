@@ -191,10 +191,9 @@ class SnakeGame{
           if(item.style.left == this.x +"px" && item.style.top == this.y + "px"){
             this.stopGame()
             this.loseIdentfier = true
-
+            this.LoseIdentifierFunc()
           }
         })
-       this.LoseIdentifierFunc()
       }
 
       stopGame(){
@@ -213,6 +212,7 @@ class SnakeGame{
         if(this.loseIdentfier == true){
           location.reload()
           console.log("reload");
+          clearInterval(this.interval)
         }
       }
     }
