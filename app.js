@@ -194,6 +194,7 @@ class SnakeGame{
 
           }
         })
+       this.LoseIdentifierFunc()
       }
 
       stopGame(){
