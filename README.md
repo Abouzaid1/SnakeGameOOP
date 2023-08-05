@@ -29,10 +29,6 @@ Basic understanding of HTML, CSS, and JavaScript
 2.2 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/snake-game.git
-Open the index.html file in your web browser.
 
 3. Game Overview
 3.1 Gameplay
