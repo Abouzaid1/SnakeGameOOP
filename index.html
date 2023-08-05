@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="color1-bg">
+    <section class="d-flex justify-content-center align-items-center  color1-bg w-100 vh-100 position-absolute screen  top-0 start-0  end-0 ">
+        <div class="m-auto color2-bg w-75 text-center rounded p-5 text-center">
+            <h4 class="fs-3 color-1">Start game</h4>
+            <p class="my-4 fs-5">Best Score  = <span id="highscore">0</span></p>
+
+            <button class="p-2 color2-bg" id="start">Start</button>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center align-items-center  color1-bg d-none w-100 vh-100 position-absolute screenlose  top-0 start-0  end-0 ">
+        <div class="m-auto color2-bg w-75 text-center rounded p-5 text-center">
+            <h4 class="fs-3 color-1">Start game</h4>
+            <p class="my-4 fs-5">Best Score  = <span id="highscore">0</span></p>
+
+            
+        </div>
+    </section>
+    <nav class="color1 color3-bg mt-5 nav_ px-5 py-2 m-auto ">
+        <div class="">
+            <div class="row justify-content-between text-center fw-bolder  ">
+                <div class="col-md-4">
+                    <p class="m-0">Best Score  = <span id="highscore">0</span></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="m-0 fs-4">Snake Game</p>
+                </div>
+                <div class="col-md-4 ">
+                    <p class="m-0" >Score = <span id="score">0</span></p>
+                </div>
+            </div>
+        </div>  
+    </nav>
+    <div class="w-100 ">
+        <div class="canvas m-auto color2-bg" id="canvas">
+            <div id="food"class="food color3-bg"></div>
+            <div id="snake" class=" snake color5-bg"></div> 
+            <audio id="eatSound" src="./assets/mixkit-chewing-something-crunchy-2244.wav"></audio>
+        </div>
+    </div>
+    
+
+    <div class="btns-container row justify-content-center text-center m-auto ">
+        <div class="col-12 my-4 m-auto">
+            <div class="up btns m-auto" id="arrow" data-key="up"><i class="fa-solid fa-arrow-up"></i></div>
+        </div>
+        <div class="m-auto row col-12 ">
+            <div class="col-4">
+                <div class="left btns" id="arrow" data-key="left"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+            <div class="col-4">
+                <div class="down btns" id="arrow" data-key="down"><i class="fa-solid fa-arrow-down"></i></div>
+            </div>
+            <div class="col-4">
+                <div class="right btns" id="arrow" data-key="right"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
