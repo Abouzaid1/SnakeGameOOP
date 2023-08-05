@@ -128,9 +128,9 @@ class SnakeGame{
             } else if (this.keyCode === 40 || this.keyCode == "down") {
               this.moveDown();
             }
+          }, this.velocity);   
             this.LoseIdentifierFunc()
             this.gameOver()
-          }, this.velocity);   
     }
 
     foodPosition(){
