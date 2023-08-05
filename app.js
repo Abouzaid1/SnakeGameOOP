@@ -128,9 +128,9 @@ class SnakeGame{
             } else if (this.keyCode === 40 || this.keyCode == "down") {
               this.moveDown();
             }
-          }, this.velocity);   
             this.LoseIdentifierFunc()
             this.gameOver()
+          }, this.velocity);   
     }
 
     foodPosition(){
@@ -210,9 +210,9 @@ class SnakeGame{
 
       LoseIdentifierFunc(){
         if(this.loseIdentfier == true){
+          clearInterval(this.interval)
           location.reload()
           console.log("reload");
-          clearInterval(this.interval)
         }
       }
     }
